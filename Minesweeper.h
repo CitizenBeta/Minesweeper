@@ -1,7 +1,7 @@
 ﻿// File Name: Minesweeper.h
 // Author: Zhang Anjun
-// Date: 2025-07-16
-// Version: 1.0
+// Date: 2025-07-18
+// Version: 1.1
 // © 2025 Zhang Anjun. All rights reserved.
 
 #pragma once

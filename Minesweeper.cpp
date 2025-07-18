@@ -1,7 +1,7 @@
 ﻿// File Name: Minesweeper.cpp
 // Author: Zhang Anjun
-// Date: 2025-07-16
-// Version: 1.0
+// Date: 2025-07-18
+// Version: 1.1
 // © 2025 Zhang Anjun. All rights reserved.
 
 #include "Minesweeper.h"
@@ -255,7 +255,12 @@ void flipCell(Cell(&board)[9][9], const char command, const int row, const int c
         else if (board[row][col].status == 1) {
             board[row][col].status = 0;
         }
-
+        else if (board[row][col].status == 2 && (!board[row][col].mine)) {
+            chord(board, row, col, maxRow, maxCol);
+        }
+        else {
+            invalidOption();
+        }
     }
 }
 
