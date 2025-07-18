@@ -36,6 +36,13 @@ int main()
     return 0;
 }
 
+void copyrightNotice() {
+    std::cout << "Author: Zhang Anjun" << std::endl
+        << "Version: 1.1" << std::endl
+        << "(C) 2025 Zhang Anjun. All rights reserved."
+        << std::endl << std::endl;
+}
+
 void minesweeper()
 {
     char command;
@@ -53,6 +60,7 @@ void minesweeper()
         result = getResult(board, maxRow, maxCol, mineCount);
     }
     displayBoard(board, result, row, col, maxRow, maxCol, mineCount);
+    copyrightNotice();
     if (result == 1) {
         std::cout << "Congratulations, you won this game!" << std::endl;
     }

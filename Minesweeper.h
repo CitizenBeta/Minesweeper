@@ -15,6 +15,8 @@ struct Cell {
     int mineNum;
 };
 
+void copyrightNotice();
+
 void minesweeper();
 
 void initBoard(Cell(*ptrBoard)[9], const int maxRow, const int maxCol);
